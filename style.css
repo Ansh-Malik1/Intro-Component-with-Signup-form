@@ -190,8 +190,13 @@ input{
     display: none; 
 }
 
+@media screen and (max-width:830px){
+    .right{
+        width:70%
+    }
+}
 
-@media screen and (max-width:830px) {
+@media screen and (max-width:730px) {
     .container{
         flex-direction: column;
         width: 100%;
