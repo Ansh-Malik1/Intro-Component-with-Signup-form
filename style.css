@@ -247,18 +247,6 @@ input{
         width:75%
     }
 }
-@media screen and (400px<width<830px) {
-    .container{
-        width: 80%;
-        gap:3rem
-    }
-    .left,.right{
-        aspect-ratio:inherit;
-    }
-    .right{
-        gap:2rem
-    }
-}
 .active{
     display: block;
 }
