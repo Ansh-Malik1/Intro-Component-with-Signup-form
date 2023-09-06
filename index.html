@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro Component</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="container">
+      <div class="left">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. 
+        </p>
+      </div>
+      <div class="right">
+        <div class="try">
+          <p><span class="freeTrial">Try it free for 7 days </span> <span class="light">then $20/mo. thereafter</span></p>
+        </div>
+        <div class="formContainer">
+          <div class="errorText">
+            <div class="field">
+              <input type="text" placeholder="First Name" class="input" firstName >
+              <img src="./images/icon-error.svg" alt="" class="error">
+            </div>
+            <div class="t"><p>First name cannnot be empty</p></div>
+          </div>
+          
+          <div class="errorText">
+            <div class="field">
+              <input type="text" placeholder="Last Name" class="input" lastName >
+              <img src="./images/icon-error.svg" alt="" class="error">
+            </div>
+            <div class="t"><p>Last name cannnot be empty</p></div>
+          </div>
+          
+
+          <div class="errorText">
+            <div class="field">
+              <input type="text" placeholder="EMAIL" class="input" email >
+              <img src="./images/icon-error.svg" alt="" class="error">
+            </div>
+            <div class="t"><p>Looks like this is not an email</p></div>
+          </div>
+          
+
+          <div class="errorText">
+            <div class="field">
+              <input type="password" placeholder="PassWord" class="input" pass>
+              <img src="./images/icon-error.svg" alt="" class="error">
+            </div>
+            <div class="t"><p class="passText"></p></div>
+          </div>
+          
+          <div class="submit">Claim Your free trial</div>
+          <div class="end">
+            <p>
+              By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
