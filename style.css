@@ -228,7 +228,7 @@ input{
     }
     .try{
         padding: 0.5rem;
-        width: 100%;
+        width: 80%;
         font-size: small;
     }
     .end{
@@ -239,6 +239,12 @@ input{
     }
     .t{
         margin-right: 1.5rem;
+    }
+    .field{
+        width: 85%;
+    }
+    .field>input{
+        width:75%
     }
 }
 @media screen and (400px<width<830px) {
