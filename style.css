@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+#wrapper{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/bg-intro-desktop.png") ;
+    background-color: hsl(0, 100%, 74%);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width:90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left{
+    width:35%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    gap:1rem;
+    line-height: 1.2;
+}
+h1{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.left p{
+    opacity: 0.8;
+}
+.right{
+    width: 55%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width: 90%;
+    background-color: white;
+    padding: 2rem 0.5rem;
+    border-radius: 10px;
+}
+
+.field{
+    display: flex;
+    border: 1px solid hsl(246, 25%, 77%);
+    width:85%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0.5rem;
+    
+}
+
+input{
+    all:unset
+}
+
+.try{
+    background-color: hsl(248, 32%, 49%);
+    padding: 1rem 1.2rem ;
+    border-radius: 10px;
+    color:white;
+    box-shadow: 0 5px 10px 1px black;
+    width: 90%;
+    text-align: center;
+
+}
+.light{
+    opacity: 0.8;
+}
+.freeTrial{
+    font-weight: bold;
+    opacity: 1;
+}
+
+.end{
+    font-size: small;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color:hsl(246, 25%, 77%)
+}
+.terms{
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+
+.terms:hover{
+    text-decoration: underline;
+}
+
+.submit{
+    background-color: hsl(154, 59%, 51%);
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding: 1rem 2rem;
+    cursor:pointer;
+    border-radius: 10px;
+    color:white;
+    border-bottom: 2px solid hsl(154, 98%, 17%);
+}
+.submit:hover{
+    background-color:hsla(154, 59%, 51%, 0.727) ;
+}
+
+.error{
+    display: none;
+}
+
+.errorText{
+    display: flex;
+    flex-direction: column;
+}
+.t{
+    justify-self: flex-end;
+    align-self:flex-end;
+    font-size: small;
+    margin-right: 3rem;
+    color:hsl(0, 100%, 74%);
+    display: none; 
+}
+
+
+@media screen and (max-width:830px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .left,.right{
+        width: 98%;
+        gap:1rem
+    }
+    #wrapper{
+        padding-bottom: 1.5rem;
+        background-image: url("./images/bg-intro-mobile.png");
+        padding: 0.5rem 0;
+    }
+    .left{
+        justify-content: flex-start;
+        text-align: center;
+        aspect-ratio:2.5;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .submit{
+        padding: 0.5rem;
+    }
+    .formContainer{
+        gap:0.5rem;
+        padding: 1rem 0;
+        width: 95%;
+    }
+    .try{
+        padding: 0.5rem;
+        width: 100%;
+        font-size: small;
+    }
+    .end{
+        width: 95%;
+    }
+    p{
+        font-size: smaller;
+    }
+    .t{
+        margin-right: 1.5rem;
+    }
+}
+@media screen and (400px<width<830px) {
+    .container{
+        width: 80%;
+        gap:3rem
+    }
+    .left,.right{
+        aspect-ratio:inherit;
+    }
+    .right{
+        gap:2rem
+    }
+}
+.active{
+    display: block;
+}
